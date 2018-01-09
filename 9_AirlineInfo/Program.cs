@@ -10,6 +10,8 @@ namespace _9_AirlineInfo
     {
         static void Main(string[] args)
         {
+            PassangersList ListOfPassengers = new PassangersList();
+            FlightList ListOfFlights = new FlightList();
         }
     }
 }
