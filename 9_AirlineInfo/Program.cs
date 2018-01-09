@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace _9_AirlineInfo
 {
@@ -25,7 +26,7 @@ namespace _9_AirlineInfo
             {
                 
 
-                Console.WriteLine("Please check: \n 1. Show timetable \n 2. Show pricelist \n 3. Show passangers list \n 4. Search flight \n 5. Add passanger to flight");
+                Console.WriteLine("Please check: \n 1. Show timetable \n 2. Show pricelist \n 3. Show passangers list \n 4. Search flight \n 5. Add passanger to flight \n 6. Another number- break");
 
                 int Answer;
                 Answer = int.Parse( Console.ReadLine());
@@ -124,9 +125,10 @@ namespace _9_AirlineInfo
 
                         break;
 
-                        case 6:
-                        break;
+                        default:
 
+                        Environment.Exit(0);
+                        break;
                         
                         
                         
